@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left">
+                
+            </div>
+			<div class="right">
+                <form action="Demo2.html" onsubmit="return validateForm()">
+                    <h2>Register</h2>
+                    <div>
+                        <input type="text" class="field" id="username" placeholder="Your Name">
+                    </div>    
+                    <span id="username-error" class="span1"></span>
+                    
+                    <input type="email" class="field" id="email" placeholder="Your Email">
+                    <span id="email-error" class="span1"></span>
+
+                    <input type="password" class="field" id="password" placeholder="Your Password" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number, 
+                    a uppercase and lowercase letter, and at least 8 characters">
+                    <span id="password-error" class="span2"></span>
+
+                    <input type="submit" class="btn" value="Sign up">
+                    
+                    <div class="message">
+                        <div class="success" id="success">
+                            Successfully Registered!
+                        </div>
+                    </div>
+                </form>
+			</div>
+		</div>
+	</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
